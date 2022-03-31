@@ -1,0 +1,282 @@
+:root {
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 3fr 3fr;
+  font-weight: bold;
+  padding: 24px 24px;
+  background-color: rgb(55, 101, 161);
+  gap: 36px;
+}
+
+.sideButton {
+  background: none;
+  border: 1px solid transparent;
+  padding: 0px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+
+.links {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 32px;
+}
+
+.config {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 32px;
+}
+
+.icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.sidebar p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.sidebar p img {
+  height: 1.7rem;
+}
+
+.header {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 24px;
+  margin-left: 24px;
+  display: grid;
+  grid-template-columns:  2fr 1fr;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.alerter {
+  border: none;
+  background: none;
+}
+
+.headButton {
+  background-color: rgb(30, 136, 110);
+  border: none;
+  border-radius: 24px;
+  width: 4rem;
+  height: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.userIcon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  padding: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.userAvatar {
+  height: 80px;
+  width:  80px;
+  border-radius: 50%;
+}
+
+.search {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+
+input {
+  width: 800px;
+  background: linear-gradient(#3f9b8f70, #525bc7);
+}
+
+.alerts {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.welcome {
+  grid-row: 2;
+  grid-column: 1;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 36px;
+}
+
+.post {
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.content {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: rgba(100, 122, 121, 0.527);
+  display: grid;
+  grid-template-columns:  3fr 1fr;
+  grid-template-rows: 1rem 1fr;
+  padding: 24px;
+  gap: 24px;
+}
+
+.article {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 16px;
+  height: 300px;
+  background-color: white;
+  border-left: 10px solid blue;
+  border-radius: 12px;
+  text-align: justify;
+}
+
+.projHeader {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.annHeader {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.projHeader, 
+.annHeader, 
+.trendHeader,
+.title {
+  font-weight: bold;
+}
+
+
+.extra {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.annBox, .trendBox {
+  display: grid;
+  grid-auto-flow: row;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.news {
+  font-size: 0.7rem;
+}
+
+.newsTitle {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.trend {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: start;
+  gap: 16px;
+  padding: 16px;
+}
+
+.trendPfp {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.trendUser {
+  justify-self: start;
+}
+
+.userID {
+  font-size: 0.7rem;
+}
+
+.sideButton:hover{
+  border-bottom: 1px solid white;
+}
+
+.alerter:active,
+.headButton:active,
+.iconButton:active,
+.sideButton:active {
+  transform: scale(0.98)
+}
